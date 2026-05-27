@@ -12,4 +12,8 @@ test.describe("E2E WordPress Playground", () => {
             timeout: 30000,
         });
     });
+
+    test("teste", async({ page }) => {
+
+    });
 });
