@@ -6,11 +6,11 @@ export class Auth{
         this.page = page;
     }
 
-    async doLogin(username, password) {
-        await this.page.goto("/wp-login.php");
+    async doLogin(username: string, password: string) {
+        await this.page.goto("https://sosfinance.joaoc.dev/wp-login.php");
         await this.page.fill("#user_login", username);
         await this.page.fill("#user_pass", password);
-        await this.page.click("#submit", );
+        await this.page.click("#wp-submit", );
     }
 
 }
